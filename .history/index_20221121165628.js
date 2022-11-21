@@ -30,14 +30,12 @@ function calculatesFarePrice(start, destination) {
         return 0;
 
     } else if (blocksTravelled < 2000) {
-        return (blocksTravelled - 400) * .02;
 
     } else if (blocksTravelled < 2500) {
-        return 25;
 
     } else if (blocksTravelled >= 2500) {
         return "cannot travel that far";
-
+        
     }
 
 }

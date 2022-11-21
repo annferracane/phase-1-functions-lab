@@ -9,7 +9,7 @@ function distanceFromHqInFeet(currentBlock) {
 }
 
 function distanceTravelledInFeet(start, destination) {
-    const blocksTravelled = Math.abs(start - destination);
+    const blocksTravelled = Math.abs(startingBlock - destination);
     return blocksTravelled * 264; 
 
 }
@@ -24,20 +24,5 @@ function returns 'cannot travel that far' if a ride over 2500 feet is requested.
 */
 
 function calculatesFarePrice(start, destination) {
-    const blocksTravelled = distanceTravelledInFeet(start, destination);
-
-    if(blocksTravelled < 400) {
-        return 0;
-
-    } else if (blocksTravelled < 2000) {
-        return (blocksTravelled - 400) * .02;
-
-    } else if (blocksTravelled < 2500) {
-        return 25;
-
-    } else if (blocksTravelled >= 2500) {
-        return "cannot travel that far";
-
-    }
 
 }
